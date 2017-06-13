@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.idham.emandarin2.WQuizActivity">
+
+    <TextView
+        android:id="@+id/QuestionTextView"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="3dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/AnswerText"
+        android:layout_alignStart="@+id/AnswerText" />
+
+    <EditText
+        android:id="@+id/AnswerText"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="28dp"
+        android:layout_below="@+id/QuestionTextView"
+        android:layout_alignLeft="@+id/AnswerButton"
+        android:layout_alignStart="@+id/AnswerButton" />
+
+    <Button
+        android:id="@+id/AnswerButton"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AnswerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:onClick="checkAnswer"
+        android:text="Check Answer"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="71dp" />
+
+    <TextView
+        android:id="@+id/AnswerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnswerButton"
+        android:layout_alignStart="@+id/AnswerButton"
+        android:layout_below="@+id/AnswerButton"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/QuestionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Next Question"
+        android:layout_below="@+id/AnswerTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
